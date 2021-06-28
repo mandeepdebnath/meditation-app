@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-image: linear-gradient(#88B4FF, #fff);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* utilities */
+.duration button{
+    width: 100px;
+    height: 30px;
+    padding: 5px 0px;
+    font-size: 0.8em;
+    background-color: #fff;
+    color: #018EBA;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 0 rgba(1, 142, 186, 0.40);
+    cursor: pointer;
+    transition: all 0.5s ease;
+   
+}
+.duration button:focus,
+.player-controls button:focus{
+    background-color: #018EBA;
+    color: #fff;
+}
+
+.player-controls button{
+    width: 100px;
+    height: 30px;
+    padding: 5px 0px;
+    font-size: 0.8em;
+    background-color: #fff;
+    color: #018EBA;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 0 rgba(1, 142, 186, 0.40);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.mood button{
+    width: 60px;
+    height: 60px;
+    background-color: #018EBA;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 0 rgba(1, 142, 186, 0.40);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.mood button svg{
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    
+}
+/* .mood button:focus{
+    background-color: #fff;
+} */
+.mood button:focus svg{
+    color: #f8f236;
+}
+
+button{
+    z-index: 100;
+}
+button:hover{
+    transform: scale(0.95);
+}
+
+
+.choose-time{
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #018EBA;
+    height: 10vh;
+    /* color: #f8f236 ; */
+}
+
+
+.choose-time h1{
+    margin-bottom: 10px;
+}
+.duration{
+    display: flex;
+    gap: 10px;
+}
+
+.timeline{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.timeline .player{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+}
+.timeline .player svg{
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);;
+    pointer-events: none;
+}
+.timeline svg circle {
+    transition: all 0.2s ease-in-out;
+}
+.time-display {
+    color: #018EBA;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.player-controls{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.mood-section{
+    height: 20vh;
+    
+}
+.mood-section h1{
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #018EBA;
+}
+.moods{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.mood p{
+    font-size: 0.7em;
+    color: #018EBA;
+    opacity: 0.7;
+    text-align: center;
+}
+
+
+.copyright{
+    height: 10vh;
+    color: #018EBA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright p{
+    font-size: 15px;
+    opacity: 0.6;
+}
